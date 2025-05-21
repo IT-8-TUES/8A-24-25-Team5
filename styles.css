@@ -9,13 +9,13 @@ body {
 header {
     background-color: #0D1B2A;
     color: #E0E1DD;
-    padding-top: 21px;
+    padding-top: 1.3125em;
     text-align: center;
 }
 .intro{
     margin-left:5em;
     padding-top:5em;
-    font-size:18px;
+    font-size:1.125em;
     letter-spacing:0.05em;
     word-spacing:0.1em;
     height:5em;
@@ -28,11 +28,11 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 0.625em;
 }
 
 nav ul li a {
-    font-size:18px;
+    font-size:1.125em;
     text-align:center;
     word-spacing:0.3em;
     color: #3FB6A8;
@@ -40,10 +40,10 @@ nav ul li a {
 }
 
 footer {
-    font-size:18px;
+    font-size:1.125em;
     margin-top:13em;
     text-align: center;
-    padding: 20px;
+    padding: 1.25em;
     background-color: #22466d;
     height: 8em;    
     color:#E0E1DD;
@@ -52,7 +52,7 @@ footer {
 button {
     background-color: #0D1B2A;
     color: #3FB6A8;
-    padding: 10px 20px;
+    padding: 0.625em 1.25em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
