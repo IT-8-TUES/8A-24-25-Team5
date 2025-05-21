@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакт с нас</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p.description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Свържете се с нас</h1>
+        <p class="description">
+            Ние сме екип, посветен на това да ви предоставим най-доброто обслужване.<br>
+            Попълнете формата по-долу и ще се свържем с вас възможно най-скоро.
+        </p>
+
+        <form>
+            <label for="name">Вашето име</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Имейл адрес</label>
+            <input type="email" id="email" name="email" placeholder="primer@domena.com" required>
+
+            <label for="message">Съобщение</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <input type="submit" value="Изпрати">
+        </form>
+    </div>
+</body>
+</html>
