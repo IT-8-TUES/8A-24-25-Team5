@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Add Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add a New Task</h1>
+        <nav>
+            <ul>
+                <li><a href="home-page.html">Home</a></li>
+                <li><a href="todo-list.html">My Tasks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro">
+      <section class="add-task">
+        <form id="todo-form">
+            <input type="text" id="task-input" placeholder="Enter task description" required>
+            <select id="priority-select">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+     </section>
+    </section>
+
+    <footer>
+        <button id="cancel">Cancel</button>
+    </footer>
+
+    <script src="add_task.js"></script>
+</body>
+</html>
