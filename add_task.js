@@ -7,4 +7,6 @@ function addTask(taskText, taskPriority) {
     };
     tasks.push(newTask);
     localStorage.setItem('tasks', JSON.stringify(tasks));
+    renderTasks();
+
 }
