@@ -3,25 +3,11 @@
   <meta charset="UTF-8">
   <title>Settings - Light/Dark Mode</title>
   <style>
-    :root {
-      --bg-light: #ffffff;
-      --text-light: #000000;
-      --bg-dark: #121212;
-      --text-dark: #f1f1f1;
-    }
-
     body {
       font-family: Arial, sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      transition: background-color 0.3s, color 0.3s;
+      background-color: #ffffff;
+      color: #000000;
       padding: 40px;
-    }
-
-    /* Toggle dark mode using :has (modern browser support only) */
-    html:has(#mode-toggle:checked) body {
-      background-color: var(--bg-dark);
-      color: var(--text-dark);
     }
 
     .toggle-container {
@@ -41,7 +27,7 @@
   <p>Select theme mode:</p>
 
   <div class="toggle-container">
-    <input type="checkbox" id="mode-toggle">
+    <input type="checkbox" id="mode-toggle" disabled>
     <label for="mode-toggle" class="toggle-label">Light / Dark Mode</label>
   </div>
 
