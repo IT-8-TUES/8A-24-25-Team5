@@ -37,6 +37,17 @@ nav ul li a {
     word-spacing:0.3em;
     color: #3FB6A8;
     text-decoration: none;
+    width: fit-content;
+    display: inline-block;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    border: 0.125em solid #3FB6A8;
+    border-radius: 13%;
+}
+
+nav ul li a:hover{
+    background-color: #53b8ac;
+    color: white;
+    transition: 0.3s ease;
 }
 
 footer {
@@ -53,11 +64,12 @@ button {
     background-color: #0D1B2A;
     color: #3FB6A8;
     padding: 0.625em 1.25em;
-    border: none;
-    border-radius: 5px;
+    border: 0.125em solid #3FB6A8;
+    border-radius: 13px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #3FB6A8;
+    background-color: #3FB6A8;  
+    color: white;                           
 }
