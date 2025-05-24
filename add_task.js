@@ -8,5 +8,12 @@ function addTask(taskText, taskPriority) {
     tasks.push(newTask);
     localStorage.setItem('tasks', JSON.stringify(tasks));
     renderTasks();
-
 }
+document.getElementById("taskForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const taskText = document.getElementById("taskText").value;
+  const taskPriority = document.getElementById("taskPriority").value;
+  addTask(taskText, taskPriority);
+  document.getElementById("taskText").value = "";
+  document.getElementById("taskPriority").value = "medium";
+});
