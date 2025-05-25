@@ -1,8 +1,10 @@
 function deleteTask(index) {
-  if(confirm("Are yopu sure you want to delete the task")){
-  const task = JSON.parse(localStorage.getItem('task')) || [];
-  task.splice(index, 1); 
-  localStorage.setItem('task', JSON.stringify(task));
-  renderTasks(); 
-}
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+  if (index >= 0 && index < tasks.length) {
+    tasks.splice(index, 1); 
+    localStorage.setItem('tasks', JSON.stringify(tasks)); 
+    renderTasks();
+  } else {
+    console.error('Invalid task index:', index);
+  }
 }
