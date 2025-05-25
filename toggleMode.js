@@ -1,6 +1,12 @@
-toggleMode()
-{
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    localStorage.setItem('theme', isDrak? 'dark' : 'light');
+function toggleTheme() {
+    const themeLink = document.getElementById('theme-style');
+    const currentTheme = themeLink.getAttribute('href');
+
+    if (currentTheme === 'styles.css') {
+        themeLink.setAttribute('href', 'light_style.css');
+        localStorage.setItem('theme', 'light');
+    } else {
+        themeLink.setAttribute('href', 'styles.css');
+        localStorage.setItem('theme', 'dark');
+    }
 }
