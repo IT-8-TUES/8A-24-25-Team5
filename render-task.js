@@ -1,5 +1,6 @@
+renderTasks();
 function renderTasks() {
-    const tasksContainer = document.getElementById('to-do-list');
+    const tasksContainer = document.getElementById('ToDoList');
     tasksContainer.innerHTML = '';
 
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
