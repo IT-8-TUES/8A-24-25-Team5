@@ -1,6 +1,7 @@
-function deleteAllTasks() {
-  if (confirm("Are you sure you want to delete all tasks?")) {
-    localStorage.removeItem('tasks');
-    renderTasks();
-  }
+renderTasks();
+function clearAllTasks() {
+  localStorage.removeItem('tasks');
+  renderTasks();
 }
+document.getElementById('Clear tasks').addEventListener('click', clearAllTasks);
+renderTasks();
