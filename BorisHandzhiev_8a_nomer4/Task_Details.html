@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="Task List Styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />  
+    <title>TaskFlow - Task Details</title>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1>Task Details</h1>
+            <nav>
+                <ul>
+                    <li><a href="to-do-list.html">My Tasks</a></li>
+                    <li><a href="add_task_page.html">Add Task</a></li>
+                    <li><a href="Contact_us.html">Contact us</a></li>
+                    <li><a href="2.html">Settings</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="taskDetails">
+                <h2 id="task-title"></h2>
+                <p id="task-priority"></p>
+            </section>
+            <button id="delete-task-button" onclick="clearSelectedTask()">Delete Task</button>
+        </main>
+        <footer>
+            <div class="contact info">
+                <h3> Contact Us</h3>
+                <p><strong>Phone:</strong> +359-882-603-722</p>
+                <p><strong>Email:</strong> a.stoimenov@abv.bg</p>
+            </div>
+            <div class="nav_footer">
+                <ul>
+                    <li><a href="to-do-list.html" class="nav_footer-link">My Tasks</a></li>
+                    <li><a href="add_task_page.html" class="nav_footer-link">Add Task</a></li>
+                    <li><a href="Contact_us.html" class="nav_footer-link">Contact us</a></li>
+                    <li><a href="2.html" class="nav_footer-link">Settings</a></li>
+                </ul>
+            </div>
+            <div class="social_media">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" aria-label="Tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            <div class="extra info">
+                <h3>TaskFlow</h3>
+                <p> Sofia, Bulgaria</p>
+                <p>© 2025 TaskFlow. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="task-details.js"></script>
+    <script src="delete task javascript.js"></script>
+</body>
+</html>
