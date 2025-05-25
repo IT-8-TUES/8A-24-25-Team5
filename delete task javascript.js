@@ -1,10 +1,14 @@
-function deleteTask(index) {
-  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-  if (index >= 0 && index < tasks.length) {
-    tasks.splice(index, 1); 
-    localStorage.setItem('tasks', JSON.stringify(tasks)); 
-    renderTasks();
-  } else {
-    console.error('Invalid task index:', index);
+function clearSelectedTask() {
+  if (confirm("Are you sure you want to delete this task?")) {
+    const selectedTask = JSON.parse(localStorage.getItem('selectedTask'));
+    if (!selectedTask) return;
+
+    const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    const updatedTasks = tasks.filter(task => task.text !== selectedTask.text);
+
+    localStorage.setItem('tasks', JSON.stringify(updatedTasks));
+    localStorage.removeItem('selectedTask');
+
+    window.location.href = 'to-do-list.html';
   }
 }
