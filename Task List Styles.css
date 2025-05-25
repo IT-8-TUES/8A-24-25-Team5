@@ -16,4 +16,118 @@
 #todo-list li.completed {
     text-decoration: line-through;
     color: #888;
+} //koda predi tova nz kakvo pravi i ne znam dali ne treqbva da se redaktira zashtoto ne me kefi beliq background
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0D1B2A;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #0D1B2A;
+    color: #E0E1DD;
+    padding-top: 1.3125em;
+    text-align: center;
+}
+.intro{
+    margin-left:5em;
+    padding-top:5em;
+    font-size:1.125em;
+    letter-spacing:0.05em;
+    word-spacing:0.1em;
+    height:5em;
+    color:#E0E1DD;
+}
+ 
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.625em;
+}
+
+nav ul li a {
+    font-size:1.125em;
+    text-align:center;
+    word-spacing:0.3em;
+    color: #3FB6A8;
+    text-decoration: none;
+    width: fit-content;
+    display: inline-block;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    border: 0.125em solid #3FB6A8;
+    border-radius: 13%;
+}
+
+nav ul li a:hover{
+    background-color: #53b8ac;
+    color: white;
+    transition: 0.3s ease;
+}
+
+footer {
+    font-size:1.125em;
+    margin-top:13em;
+    text-align: center;
+    padding: 1.25em;
+    background-color: #22466d;
+    height: 14em;    
+    color:#E0E1DD;
+    position:relative;
+}
+
+.nav_footer{
+    position: absolute;
+    font-size:1.2em;
+    top: 4em;
+    left: 10em; 
+}
+
+.nav_footer-link{
+    color:#E0E1DD;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.social_media {
+  position: absolute;
+  top: 6em;
+  right: 10em;
+}
+
+.social_media i {
+  color: #E0E1DD;
+  font-size: 2.5em;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+button {
+    background-color: #0D1B2A;
+    color: #3FB6A8;
+    padding: 0.625em 1.25em;
+    border: 0.125em solid #3FB6A8;
+    border-radius: 13px;
+    cursor: pointer;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+button:hover {
+    background-color: #3FB6A8; 
+    transition: 0.3s ease; 
+    color: white;                           
 }
